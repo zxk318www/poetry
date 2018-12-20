@@ -1,0 +1,50 @@
+<!--pages/shici/shici.wxml-->
+<view class="conter">
+    {{shiju}}
+</view>
+
+
+<view class="choose-V">
+    <block wx:for="{{anArray}}" wx:key="{{item.id}}">
+        <view class="{{check[index]?'choose-view2':'choose-view'}}" bindtap="choose" data-num="{{num}}" data-val="{{item}}"
+            data-index="{{index}}">{{item}}</view>
+    </block>
+</view>
+
+<text class="" selectable="false" space="false" decode="false">
+    你的组合：
+</text>
+
+<view class="choose-V" hover-class="none" hover-stop-propagation="false">
+    <block wx:for="{{userChoose}}" wx:key="{{item.id}}">
+        <view class="user" hover-class="none" hover-stop-propagation="false">
+            {{item}}
+        </view>
+    </block>
+</view>
+
+<view class="conl" wx:if="{{conl == true}}">
+    {{jielun}}
+</view>
+
+
+<view class="textCls" wx:if="{{conl == true}}">
+    <view> 标题：{{title}}</view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        作者：{{author}}
+    </view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        朝代：{{dynasty}}
+    </view>
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        诗句：
+    </view>
+    <view class="txS">
+        <block wx:for="{{content}}" wx:key="{{item.id}}">
+            <view>{{item}}</view>
+        </block>
+    </view>
+
+</view>
+
+<button class="btn" wx:if="{{conl == true}}" bindtap="next">下一题</button>

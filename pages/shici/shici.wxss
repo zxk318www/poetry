@@ -1,0 +1,82 @@
+/* pages/shici/shici.wxss */
+
+.conter{
+    text-align: center
+}
+
+.choose-V{
+    display: flex;
+    margin-top: 40rpx;
+}
+
+.choose-view{  
+    flex: 1;
+    content:none !important;
+    height: 80rpx;
+    width: 50rpx; 
+    border:1px solid white;
+    background-color: #42e6d0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}  
+
+.choose-view2{  
+    flex: 1;
+    content:none !important;
+    height: 80rpx;
+    width: 50rpx; 
+    border:1px solid white;
+    background-color: #bb6aaf;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}  
+
+.conl{
+    text-align: center;
+    width: 100%;
+    margin-top: 50rpx;
+    background-color: #e07318;
+    color: antiquewhite;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCls{
+    margin-top: 50rpx;
+    background-color: #dfdfdf;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30rpx;
+}
+
+.user{
+    text-align: center;
+    width: 100%;
+    background-color: #ba49eb;
+    color:#ffffff;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ml{
+    margin-left: 50rpx
+}
+.txS{
+    font-size: 25rpx;
+    margin-left: 70rpx;
+}
+
+.btn{
+    width: 50%;
+    text-align: center;
+    margin-top: 50rpx;
+}
