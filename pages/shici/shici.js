@@ -107,7 +107,10 @@ Page({
     })
   },
   choose(e) {
-
+  
+    if(this.data.conl){
+      return;
+    }
     var val = e.currentTarget.dataset.val
 
     var index = e.currentTarget.dataset.index

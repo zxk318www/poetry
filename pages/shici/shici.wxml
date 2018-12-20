@@ -44,7 +44,14 @@
             <view>{{item}}</view>
         </block>
     </view>
-
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        翻译：
+    </view>
+    <view class="txS">
+        <block wx:for="{{translate}}" wx:key="{{item.id}}">
+            <view>{{item}}</view>
+        </block>
+    </view>
 </view>
 
 <button class="btn" wx:if="{{conl == true}}" bindtap="next">下一题</button>
